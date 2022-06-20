@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'sans-serif';
+
+}
+.container {
+    width: 100%;
+    max-width: 1720px;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    border-bottom-left-radius: 20px 30px ;
+    border-bottom-right-radius: 20px 30px ;
+
+}
+
+
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo img {
+    width: 372px;
+    height: 82px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.navbar .container .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navbar .container .nav-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+
+}
+
+.navbar .container .nav-list li a{
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+}
+
+.navbar .container .collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.navbar .container .collapse .seach {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .container .collapse .seach input {
+    width: 205px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #466b8a;
+    border-radius: 10px 10px;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    color: #466b8a;
+}
+
+.navbar .container .collapse .seach input::placeholder {
+    color: #466b8a;
+    text-transform: uppercase;
+}
+
+.navbar .container .collapse .seach button {
+    width: 205px;
+    height: 35px;
+    padding: 5px;
+    background-color: #466b8a;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 10px 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left top;
+
+}
+.banner .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+    
+}
+
+
+.banner .contenido::before {
+    content: '';
+    position: absolute;
+    top: -500px;
+    right: -20%;
+    width: 100%;
+    height: 100%;
+    background: url('img/_Path_.png') no-repeat center center;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+
+}
+
+.banner .contenido::after {
+    content: '';
+    position: absolute;
+    bottom: -500px;
+    left: -20%;
+    width: 100%;
+    height: 100%;
+    background: url('img/_Path_.png') no-repeat center center;
+    transform: rotate(90deg);
+    opacity: 0.5;
+
+}
+.banner .contenido h1 {
+    font-size: 50px;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-variant: black;
+    text-transform: uppercase;
+}
+
+.banner .contenido p {
+    font-size: 28px;
+    font-variant: regular;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 100px;
+
+}
+
+.banner .contenido a {
+    width: 233px;
+    height: 50px;
+    font-size: 27px;
+    border: solid 2px #fff;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+    
+}
+
+.texto-empresa {
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+ 
+    font-variant: regular;
+    font-family: 'Lato', sans-serif;
+
+}
+.texto-empresa .contenido {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px 100px ;
+    padding-left: 30%;
+    border-bottom-left-radius: 20px 30px;
+    border-bottom-right-radius: 20px 30px;
+}
+
+.texto-empresa .contenido p {
+    font-size: 28px;
+    text-align: justify;
+    color: #6b6b6b;
+}
+
+.detalles {
+    position: relative;
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 100px ;
+    font-size: 28px;
+    color: #6b6b6b;
+  
+}
+
+.detalles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0 ;
+    width: 50%;
+    height: 100%;
+    background: url('img/_Path_.png') no-repeat center right fixed;
+    transform: rotate(180deg);
+    background-size: cover;
+    opacity: 0.5;  
+
+  
+}
+.detalles h3 {
+    text-transform: uppercase;
+    color: #466b8a;
+    font-weight: bold;
+    font-style: black;
+
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+ 
+}
+
+
+.img-container img {
+    max-height: 168px;
+    width: auto;
+    object-fit: cover;
+    max-width: 175px;
+    
+}
+
+.servicios {
+    position: relative;
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 50px 100px ;
+    font-size: 28px;
+    color: #6b6b6b;
+}
+
+.sevicios-item {
+    position: relative;
+    
+}
+.sevicios-item .sevicios-imagen {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    color: #6b6b6b;
+}
+.sevicios-item .sevicios-imagen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    margin: 0 auto;
+    font-size: 28px
+  
+}
+
+.sevicios-item .sevicios-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+.sevicios-item .sevicios-imagen .servicio-titulo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.8em;
+    background: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: black;
+    font-size: 28px;
+}
+.sevicios-item p {
+    color: #6b6b6b;
+    font-size: 28px;
+    text-align: left;
+    border: solid 1px #6b6b6b;
+    padding: 15px 15px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+}
+
+.servicios h2 {
+    text-transform: uppercase;
+    color: #466b8a;
+    font-weight: bold;
+    font-style: black;
+    font-size: 28px;
+    margin-bottom: 50px;
+}  
+
+.noticias h3 {
+ 
+    color: #466b8a;
+    font-weight: bold;
+    font-style: black;
+    font-size: 28px;
+}
+
+.noticias h2 {
+    text-transform: uppercase;
+    color: #466b8a;
+    font-weight: bold;
+    font-style: black;
+    font-size: 28px;
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.noticias small {
+    font-size: 20px;
+    color: #6b6b6b;
+    font-style: light;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.noticias p {
+    font-size: 28px;
+    color: #6b6b6b;
+
+}
+
+.post-img  {
+    width: 90%;
+    height: 200px;
+        
+    color: #6b6b6b;
+    overflow: hidden;
+}
+.post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.noticias .row {
+    width: 100%;
+    max-width: 1720px;
+    padding: 50px 100px ;
+
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+
+    width: 100%;
+    height: 340px;
+    background-color: #474848;
+}
+
+footer .footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px ;
+    color: #6b6b6b ;
+
+}
+
+footer .footer img {
+    width: 260px;
+    height: 62px;
+
+
+}
+
+footer .footer::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+footer .footer::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/_Path_.png') no-repeat center right fixed;
+    opacity: 0.5;
+}
